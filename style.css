@@ -6,9 +6,9 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    padding-top: 100px; 
-    min-height: 100vh; 
-    overflow-x: hidden; 
+    padding-top: 100px;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .header {
@@ -78,10 +78,9 @@ body {
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 768px) {
     body {
-        padding-top: 130px; 
+        padding-top: 130px;
     }
 
     .header {
@@ -111,9 +110,9 @@ body {
     }
 
     .categories {
-        flex-direction: row;
+        flex-direction: column;
         gap: 10px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .category {
@@ -121,4 +120,3 @@ body {
         min-width: auto;
     }
 }
-
