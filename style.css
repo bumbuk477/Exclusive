@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    padding-top: 100px; /* Відступ для того, щоб контент не перекривався меню */
+    padding-top: 100px; 
+    min-height: 100vh; 
 }
 
 .header {
@@ -62,7 +63,7 @@ body {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-top: 20px; /* Відступ після меню */
+    margin-top: 20px;
 }
 
 .category {
@@ -74,4 +75,106 @@ body {
     min-width: 120px;
     text-align: center;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .phone-number {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+
+    .categories {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .category {
+        font-size: 14px;
+        min-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .top-bar {
+        align-items: center;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .search-bar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .phone-number {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 12px;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .category {
+        font-size: 12px;
+        min-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .search-bar {
+        font-size: 20px;
+    }
+
+    .login-btn {
+        font-size: 18px;
+    }
+
+    .category {
+        font-size: 18px;
+    }
 }
