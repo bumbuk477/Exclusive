@@ -114,7 +114,7 @@ body {
 
     .categories {
         flex-direction: column;
-        margin: 10px;
+        margin: 1px;
         justify-content: flex-start;
     }
 
