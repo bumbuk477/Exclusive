@@ -1,3 +1,4 @@
+@media (orientation: landscape ) and (max-width: 1500px) {
 * {
     margin: 0;
     padding: 0;
@@ -176,3 +177,13 @@ body {
     background: rgb(223, 5, 136) ;
     transition: all 0.3s ease;
 }
+}
+
+@media (orientation: portrait) and (max-width: 450px){
+.vstavne_foto2 {
+    margin:0 ;
+    z-index: 1100;
+    width: 200px;
+    height: auto;
+}                
+}                                                                                                                                                                                                 
