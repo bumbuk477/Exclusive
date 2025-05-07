@@ -358,10 +358,5 @@ body {
 }
 
 @media (orientation: portrait) and (max-width: 450px){
-.vstavne_foto2 {
-    margin:0 ;
-    z-index: 1100;
-    width: 200px;
-    height: auto;
-}                
+*{size: 450px}            
 }                                                                                                                                                                                                 
