@@ -9,3 +9,4 @@ add_to_cart.addEventListener('click', function(){
    alert(`${item_name}} додано в кошик`)
    let li =document.createElement("li")
    li.textContent(`${item_name}  -  ${price}`)
+})
