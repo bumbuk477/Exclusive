@@ -173,3 +173,24 @@ body {
     background: rgb(223, 5, 136) ;
     transition: all 0.3s ease;
 }
+.cart{
+    
+    background: #f5f5f5;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cart:hover{
+    
+    background: #f0f0f0;
+    color: #CF2F2C;
+    border-color: #CF2F2C;
+    transform: scale(1.05);
+}
