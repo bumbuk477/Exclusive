@@ -7,28 +7,38 @@
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <button id="open-cart-btn" class="main_button" aria-label="Відкрити кошик">Кошик</button>
 <a href="index.html"><button class="main_button">Головна</button></a>
   <div class="logo">
     <img src="https://learn.logikaschool.com/uploads/student/2415971/67ff94d3dfdc5.png" alt="Логотип" />
   </div>
 
   <div class="search-bar">
-    <input type="text" placeholder="Я шукаю...">
+    <input class = "search" type="text" placeholder="Я шукаю...">
   </div>
 
   <main class="products">
     <div class="product">
       <img src="https://learn.logikaschool.com/uploads/student/2415971/6818e65d0b786.png" alt="1">
-      <p>Жіночі сонцезахисні окуляри</p>
-      <p>220 грн</p>
+      <p class="item_name">Жіночі сонцезахисні окуляри</p>
+      <p><span class="price">220</span> грн</p>
+      <button class="add_to_cart">Додати в кошик</button>
     </div>
     <div class="product">
       <img src="https://learn.logikaschool.com/uploads/student/2415971/6818e70fb0cfb.png" alt="2">
-      <p>Чоловічі сонцезахисні окуляри</p>
-      <p>250 грн</p>
+      <p class="item_name">Чоловічі сонцезахисні окуляри</p>
+      <p><span class="price">250</span> грн</p>
+      <button class="add_to_cart">Додати в кошик</button>
     </div>
   </main>
-  
+  <!-- Випливаючий кошик -->
+  <div id="cart" class="cart hidden" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <h3 id="cart-title">Кошик</h3>
+    <ul id="cart-items"></ul>
+    <p>Разом: <span id="cart-total">₴0</span></p>
+    <button id="close-cart">Закрити</button>
+    <button id="checkout-btn">Сплатити</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

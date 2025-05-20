@@ -7,33 +7,44 @@
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <button id="open-cart-btn" class="main_button" aria-label="Відкрити кошик">Кошик</button>
 <a href="index.html"><button class="main_button">Головна</button></a>
   <div class="logo">
     <img src="https://learn.logikaschool.com/uploads/student/2415971/67ff94d3dfdc5.png" alt="Логотип" />
   </div>
 
   <div class="search-bar">
-    <input type="text" placeholder="Я шукаю...">
+    <input class = "search" type="text" placeholder="Я шукаю...">
   </div>
 
   <main class="products">
     <div class="product">
       <img src="https://learn.logikaschool.com/uploads/student/2415971/6816528def5be.png" alt="1">
-      <p>Свисток у вигляді пташки</p>
-      <p>Ціна: 50 грн</p>
+      <p class="item_name">Свисток у вигляді пташки</p>
+      <p>Ціна: <span class="price">50</span> грн</p>
+      <button class="add_to_cart">Додати в кошик</button>
     </div>
     <div class="product">
       <img src="https://learn.logikaschool.com/uploads/student/2415971/68165397166d7.png" alt="2">
-      <p>Магніт тришаровий дерев'яна карта Україна</p>
-      <p>Ціна: 100 грн</p>
+      <p class="item_name">Магніт тришаровий дерев'яна карта Україна</p>
+      <p>Ціна: <span class="price">100</span> грн</p>
+      <button class="add_to_cart">Додати в кошик</button>
     </div>
     <div class="product">
       <img src="https://learn.logikaschool.com/uploads/student/2415971/68165522eeaf7.png" alt="3">
-      <p>Патріотичний значок</p>
-      <p>Ціна: 80 грн</p>
+      <p class="item_name">Патріотичний значок</p>
+      <p>Ціна: <span class="price">80</span>грн</p>
+      <button class="add_to_cart">Додати в кошик</button>
     </div>
   </main>
-  
+  <!-- Випливаючий кошик -->
+  <div id="cart" class="cart hidden" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <h3 id="cart-title">Кошик</h3>
+    <ul id="cart-items"></ul>
+    <p>Разом: <span id="cart-total">₴0</span></p>
+    <button id="close-cart">Закрити</button>
+    <button id="checkout-btn">Сплатити</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
